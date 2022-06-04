@@ -6,7 +6,13 @@ export const App = () => {
   const { title } = usePageTitle();
   return (
     <>
-      <Button />
+      <Button
+        text="example"
+        variant="primary"
+        onClick={() => {
+          console.log('click');
+        }}
+      />
       <Typography variant="title">Title</Typography>
     </>
   );
