@@ -1,4 +1,3 @@
-import { useQuery, UseQueryResult } from 'react-query';
 import questionsListMock from 'mocks/questions.json';
 import { QuizQuestion } from './QuizQuestion';
 

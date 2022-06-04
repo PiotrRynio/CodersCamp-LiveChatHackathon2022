@@ -1,7 +1,7 @@
 import { TextAnswer } from '../Answer';
 import { Typography } from '../Typography';
 import { QuestionWrapper, Wrapper } from './QuestionWithAnswers.styled';
-import { useQuizQuestion } from '../../apiHooks/useQuizQuestion/useQuizQuestion';
+import { useQuizQuestion } from '../../hooks/useQuizQuestion/useQuizQuestion';
 
 type QuestionWithAnswersProps = {
   questionIndex: number;
@@ -14,9 +14,13 @@ export const QuestionWithAnswers = ({
   questionIndex,
   onAnswerClick,
 }: QuestionWithAnswersProps) => {
-  const { data: questionData } = useQuizQuestion(questionIndex);
-  console.log(questionIndex);
-  console.log(questionData);
+  const { question, questionsNumber } = useQuizQuestion();
+  const questionData = question(questionIndex);
+
+  if (questionsNumber <= questionIndex) {
+    onLastQuestionAnswered();
+  }
+
   if (!questionData) {
     return <></>;
   }
