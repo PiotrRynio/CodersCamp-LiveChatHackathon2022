@@ -3,13 +3,14 @@ import { useState } from 'react';
 import { MdCheck, MdClose } from 'react-icons/md';
 import { AnswerText, Wrapper } from './Answer.styled';
 
-type AnswerProps = {
-  answer: string;
-  answerDescription: string;
+export type TextAnswerProps = {
+  id: string;
+  answerText: string;
+  explanation: string;
   isCorrect?: boolean;
 };
 
-export const Answer = ({ answer, answerDescription, isCorrect }: AnswerProps) => {
+export const TextAnswer = ({ answerText, explanation, isCorrect }: TextAnswerProps) => {
   const [clicked, setClicked] = useState<boolean>(false);
 
   const clickHandler = () => {
@@ -19,10 +20,10 @@ export const Answer = ({ answer, answerDescription, isCorrect }: AnswerProps) =>
   return (
     <Wrapper onClick={() => clickHandler()}>
       <AnswerText>
-        <Typography variant={'answer'}>{answer}</Typography>
+        <Typography variant={'answer'}>{answerText}</Typography>
         {clicked && (isCorrect ? <MdCheck /> : <MdClose />)}
       </AnswerText>
-      {clicked && <Typography variant={'answerDescription'}>{answerDescription}</Typography>}
+      {clicked && <Typography variant={'answerDescription'}>{explanation}</Typography>}
     </Wrapper>
   );
 };

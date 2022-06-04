@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   margin: auto;
   border: 1px solid black;
   padding: 5px;
+  margin-bottom: 20px;
 
   :hover {
     background-color: #ffd000;
