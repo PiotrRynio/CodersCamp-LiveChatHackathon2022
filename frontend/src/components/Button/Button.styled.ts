@@ -24,7 +24,7 @@ export const SecondaryButton = styled.button`
   background-color: #fff;
   border-style: solid;
   border-color: #000;
-  border-width: 2px;
+  border-width: 1px;
   outline: none;
   border-radius: 4px;
   transition: all 0.3s;
