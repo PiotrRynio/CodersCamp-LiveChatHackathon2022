@@ -1,5 +1,4 @@
 import { Typography } from '../../components/Typography';
-import { Link } from 'react-router-dom';
 import { StyledStartQuizPage, StyledLink } from './StartQuizPage.styles';
 
 type StartQuizPageProps = {
@@ -10,7 +9,7 @@ export const StartQuizPage = ({ startQuizTitle, startQuizText }: StartQuizPagePr
   return (
     <StyledStartQuizPage>
       <Typography variant="subtitle">{startQuizTitle}</Typography>
-      <Typography variant="body-medium">{startQuizText}</Typography>
+      <Typography variant="body1">{startQuizText}</Typography>
       <StyledLink to="/quiz">Start Quiz</StyledLink>
     </StyledStartQuizPage>
   );

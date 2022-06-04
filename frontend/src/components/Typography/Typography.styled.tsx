@@ -14,14 +14,14 @@ export const Subtitle = styled.h4`
   margin: 0;
 `;
 
-export const BodyMedium = styled.p`
+export const Body1 = styled.p`
   font-size: 23px;
   font-weight: 400;
   line-height: 32px;
   margin: 0;
 `;
 
-export const BodySmall = styled.p`
+export const Body2 = styled.p`
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
