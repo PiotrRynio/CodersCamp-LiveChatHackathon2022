@@ -3,8 +3,8 @@ import { usePageTitle } from 'providers/PageTitleProvider';
 import { Button, Typography } from '../../components';
 
 export const Quiz = () => {
-  const { setTitle } = usePageTitle();
-  setTitle('Quiz Title');
+  const { setPageTitle } = usePageTitle();
+  setPageTitle('Quiz Title');
   return (
     <>
       <Button />
