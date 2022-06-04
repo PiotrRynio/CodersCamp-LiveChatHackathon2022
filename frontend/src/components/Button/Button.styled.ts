@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const PrimaryButton = styled.button`
+  display: block;
   padding: 12px 24px;
   min-width: 150px;
   height: 58px;
