@@ -8,8 +8,9 @@ export const PrimaryButton = styled.button`
   background-color: #ff2b00;
   outline: none;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   transition: all 0.3s;
+  text-transform: capitalize;
   &:hover {
     background-color: #e02600;
   }
@@ -21,12 +22,15 @@ export const SecondaryButton = styled.button`
   height: 58px;
   color: #000;
   background-color: #fff;
-  border-radius: 2px solid #ff2b00;
+  border-style: solid;
+  border-color: #000;
+  border-width: 2px;
   outline: none;
-  border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   transition: all 0.3s;
+  text-transform: capitalize;
   &:hover {
-    background-color: #e02600;
+    background-color: #000;
+    color: #fff;
   }
 `;

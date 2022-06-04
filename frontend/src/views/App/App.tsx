@@ -13,6 +13,13 @@ export const App = () => {
           console.log('click');
         }}
       />
+      <Button
+        text="example"
+        variant="secondary"
+        onClick={() => {
+          console.log('click');
+        }}
+      />
       <Typography variant="title">Title</Typography>
     </>
   );
