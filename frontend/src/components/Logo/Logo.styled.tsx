@@ -11,4 +11,5 @@ export const Wrapper = styled.div`
 export const LogoImage = styled.img`
   height: 33px;
   width: 33px;
+  margin-right: 10px;
 `;
