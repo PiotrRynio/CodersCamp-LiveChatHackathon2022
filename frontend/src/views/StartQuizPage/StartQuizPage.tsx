@@ -1,13 +1,21 @@
 import { Typography } from '../../components/Typography';
-import { Input } from '../../components/Input';
+import { useAppContext } from 'providers/AppContextProvider';
+import { PlayerNameInput } from '../../components/Input';
 import {
   StyledStartQuizPage,
   StyledTypographyWrapper,
   StyledInputWrapper,
   StyledLink,
 } from './StartQuizPage.styles';
+import { useState } from 'react';
 
 export const StartQuizPage = () => {
+  const { playerName, setPlayerName } = useAppContext();
+  const [name, setName] = useState('');
+  const onClick = () => {
+    setPlayerName(name);
+  };
+
   return (
     <StyledStartQuizPage>
       {/* <Typography variant="subtitle"></Typography> */}
@@ -19,14 +27,11 @@ export const StartQuizPage = () => {
         </Typography>
       </StyledTypographyWrapper>
       <StyledInputWrapper>
-        <Input
-          name="add-name"
-          onChange={() => {
-            console.log('change');
-          }}
-        />
+        <PlayerNameInput onChange={setPlayerName} value={playerName} />
       </StyledInputWrapper>
-      <StyledLink to="/quiz">Zacznij Quiz</StyledLink>
+      <StyledLink onClick={onClick} to="/quiz">
+        Zacznij Quiz
+      </StyledLink>
     </StyledStartQuizPage>
   );
 };

@@ -1,1 +1,1 @@
-export * from './InputAddName';
+export * from './PlayerNameInput';

@@ -5,7 +5,7 @@ export const StyledStartQuizPage = styled.section`
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
 `;
 
 export const StyledTypographyWrapper = styled.div`
@@ -18,6 +18,7 @@ export const StyledTypographyWrapper = styled.div`
 
 export const StyledInputWrapper = styled.div`
   align-self: center;
+  // background-color: #4997FF;
 `;
 
 export const StyledLink = styled(Link)`
