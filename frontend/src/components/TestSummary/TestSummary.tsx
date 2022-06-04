@@ -13,7 +13,7 @@ export const TestSummary = ({ result }: TestSummaryProps) => {
         Udało Ci się zdobyć <ResultValue>{result} </ResultValue> procent punktów. Podziel się wynikiem ze
         znajomymi i pomóż razem z nami zwiększać świadomość użytkowników internetu!
       </MessageWrapper>
-      <ShareIcons />
+      <ShareIcons result={'100%'} />
     </TestSummaryContainer>
   );
 };
