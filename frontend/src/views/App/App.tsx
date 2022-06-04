@@ -4,9 +4,11 @@ import { TopBar } from 'components';
 
 export const App = () => {
   return (
-    <div>
-      <TopBar />
-      <Quiz />
-    </div>
+    <>
+      <div>
+        <TopBar />
+        <Quiz />
+      </div>
+    </>
   );
 };
