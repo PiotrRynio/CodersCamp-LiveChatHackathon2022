@@ -7,7 +7,13 @@ export const Quiz = () => {
   setPageTitle('Quiz Title');
   return (
     <section>
-      <Button />
+      <Button
+        variant="primary"
+        text="button text"
+        onClick={() => {
+          console.log('click');
+        }}
+      />
       <Typography variant="title">Title</Typography>
     </section>
   );
