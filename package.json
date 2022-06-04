@@ -1,0 +1,15 @@
+{
+  "name": "task-manager",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "prepare": "husky install && cd frontend && npm install",
+    "start-fe": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "test-fe": "cd frontend && npm run test"
+  },
+  "devDependencies": {
+    "husky": "^7.0.4"
+  },
+  "dependencies": {}
+}
