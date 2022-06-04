@@ -6,9 +6,9 @@ export const Quiz = () => {
   const { setPageTitle } = usePageTitle();
   setPageTitle('Quiz Title');
   return (
-    <>
+    <section>
       <Button />
       <Typography variant="title">Title</Typography>
-    </>
+    </section>
   );
 };
