@@ -1,10 +1,13 @@
 import React from 'react';
 import { usePageTitle } from 'providers/PageTitleProvider';
-import { Button, Typography, QuestionWithAnswers } from '../../components';
+import { Typography, QuestionWithAnswers } from '../../components';
 import questions from '../../mocks/questions.json';
-//TODO: zainstalować usequery, w useQuerry zrobić custom hook'a, w nim zaimportować jsona i zwrócić obiekt z odpowienim typem
+import { useQuizQuestion } from '../../apiHooks/useQuizQuestion/useQuizQuestion';
 
 export const Quiz = () => {
+  const { data } = useQuizQuestion(0);
+  console.log(data);
+
   const { setPageTitle } = usePageTitle();
   setPageTitle('Quiz Title');
   return (
