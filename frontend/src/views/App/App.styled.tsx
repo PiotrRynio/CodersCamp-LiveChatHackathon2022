@@ -17,10 +17,3 @@ export const MainContent = styled.div`
   min-height: calc(100vh - 56px - 100px);
   width: 1200px;
 `;
-
-export const Footer = styled.div`
-  display: flex;
-  height: 100px;
-  width: 100%;
-  background-color: rgb(246, 246, 247);
-`;
