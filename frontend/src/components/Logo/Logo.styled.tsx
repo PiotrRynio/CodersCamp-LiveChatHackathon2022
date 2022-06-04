@@ -7,3 +7,8 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
 `;
+
+export const LogoImage = styled.img`
+  height: 33px;
+  width: 33px;
+`;
