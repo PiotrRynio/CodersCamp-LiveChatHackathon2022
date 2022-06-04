@@ -1,4 +1,4 @@
-export type QuizQuestion = {
+export type QuizQuestionQuery = {
   questionsList: [
     {
       id: string;

@@ -2,11 +2,13 @@ import React from 'react';
 import { usePageTitle } from 'providers/PageTitleProvider';
 import { Typography, QuestionWithAnswers } from '../../components';
 import questions from '../../mocks/questions.json';
-import { useQuizQuestion } from '../../apiHooks/useQuizQuestion/useQuizQuestion';
+import { useQuizQuestionQuery } from '../../apiHooks/useQuizQuestion/useQuizQuestionQuery';
+import { useQuizQuestion } from '../../hooks/useQuizQuestion/useQuizQuestion';
 
 export const Quiz = () => {
-  const { data } = useQuizQuestion(0);
-  console.log(data);
+  // const { data } = useQuizQuestionQuery(0);
+  const {} = useQuizQuestion();
+  // console.log(data);
 
   const { setPageTitle } = usePageTitle();
   setPageTitle('Quiz Title');
