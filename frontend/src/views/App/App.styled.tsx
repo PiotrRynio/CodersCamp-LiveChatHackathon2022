@@ -15,7 +15,7 @@ export const MainContent = styled.div`
   flex-wrap: nowrap;
   flex-direction: column;
   min-height: calc(100vh - 56px - 100px);
-  width: 100%;
+  width: 1200px;
 `;
 
 export const Footer = styled.div`
