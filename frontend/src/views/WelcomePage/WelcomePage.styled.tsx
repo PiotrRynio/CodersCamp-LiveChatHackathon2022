@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
@@ -39,4 +40,26 @@ export const ButtonSection = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+`;
+
+export const StyledLink = styled(Link)`
+  display: inline-block;
+  padding: 12px 24px;
+  min-width: 150px;
+  height: 58px;
+  color: #fff;
+  background-color: #ff2b00;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.3s;
+  text-transform: capitalize;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  align-self: center;
+
+  &:hover {
+    background-color: #e02600;
+  }
 `;

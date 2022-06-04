@@ -1,37 +1,30 @@
 import styled from 'styled-components';
 
-export const Heading1 = styled.h1`
-  font-size: 42px;
+export const Title = styled.h3`
+  font-size: 55px;
   font-weight: 900;
-  line-height: 44px;
+  line-height: 57px;
   margin: 0;
 `;
 
-export const Heading2 = styled.h2`
-  font-size: 38px;
+export const Subtitle = styled.h4`
+  font-size: 41px;
   font-weight: 900;
-  line-height: 40px;
-  margin: 0;
-`;
-
-export const Heading3 = styled.h3`
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 38px;
-  margin: 0;
-`;
-
-export const Heading4 = styled.h4`
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.2;
+  line-height: 50px;
   margin: 0;
 `;
 
 export const Body1 = styled.p`
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 32px;
+  margin: 0;
+`;
+
+export const Body2 = styled.p`
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
   margin: 0;
 `;
 
