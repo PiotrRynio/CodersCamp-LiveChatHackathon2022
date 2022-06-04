@@ -1,14 +1,27 @@
-import { TextAnswer, TextAnswerProps } from '../Answer';
+import { TextAnswer } from '../Answer';
 import { Typography } from '../Typography';
 import { QuestionWrapper, Wrapper } from './QuestionWithAnswers.styled';
+
+type TextAnswerProps = {
+  id: string;
+  answerText: string;
+  explanation: string;
+  isCorrect: boolean;
+};
 
 type QuestionWithAnswersProps = {
   question: string;
   answers: TextAnswerProps[];
   questionType: 'text' | 'image';
+  onAnswerClick(isCorrect: boolean): void;
 };
 
-export const QuestionWithAnswers = ({ question, answers, questionType }: QuestionWithAnswersProps) => {
+export const QuestionWithAnswers = ({
+  question,
+  answers,
+  questionType,
+  onAnswerClick,
+}: QuestionWithAnswersProps) => {
   return (
     <Wrapper>
       <QuestionWrapper>
@@ -23,6 +36,7 @@ export const QuestionWithAnswers = ({ question, answers, questionType }: Questio
               answerText={answer.answerText}
               explanation={answer.explanation}
               isCorrect={answer.isCorrect}
+              onAnswerClick={onAnswerClick}
             />
           ))}
         </div>
