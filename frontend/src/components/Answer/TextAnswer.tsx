@@ -7,14 +7,16 @@ export type TextAnswerProps = {
   id: string;
   answerText: string;
   explanation: string;
-  isCorrect?: boolean;
+  isCorrect: boolean;
+  onAnswerClick(isCorrect: boolean): void;
 };
 
-export const TextAnswer = ({ answerText, explanation, isCorrect }: TextAnswerProps) => {
+export const TextAnswer = ({ answerText, explanation, isCorrect, onAnswerClick }: TextAnswerProps) => {
   const [clicked, setClicked] = useState<boolean>(false);
 
   const clickHandler = () => {
     setClicked(true);
+    onAnswerClick(isCorrect);
   };
 
   return (

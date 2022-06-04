@@ -1,28 +1,46 @@
-import { TextAnswer, TextAnswerProps } from '../Answer';
+import { TextAnswer } from '../Answer';
 import { Typography } from '../Typography';
 import { QuestionWrapper, Wrapper } from './QuestionWithAnswers.styled';
+import { useQuizQuestion } from '../../hooks/useQuizQuestion/useQuizQuestion';
 
 type QuestionWithAnswersProps = {
-  question: string;
-  answers: TextAnswerProps[];
-  questionType: 'text' | 'image';
+  questionIndex: number;
+  onAnswerClick(isCorrect: boolean): void;
+  onLastQuestionAnswered(): void;
 };
 
-export const QuestionWithAnswers = ({ question, answers, questionType }: QuestionWithAnswersProps) => {
+export const QuestionWithAnswers = ({
+  onLastQuestionAnswered,
+  questionIndex,
+  onAnswerClick,
+}: QuestionWithAnswersProps) => {
+  const { question, questionsNumber } = useQuizQuestion();
+  const questionData = question(questionIndex);
+
+  if (questionsNumber <= questionIndex) {
+    onLastQuestionAnswered();
+  }
+
+  if (!questionData) {
+    return <></>;
+  }
+
+  const { questionText, answersOptions, type } = questionData;
   return (
     <Wrapper>
       <QuestionWrapper>
-        <Typography variant={'question'}>{question}</Typography>
+        <Typography variant={'question'}>{questionText}</Typography>
       </QuestionWrapper>
-      {questionType === 'text' && (
+      {type === 'text' && (
         <div>
-          {answers.map((answer) => (
+          {answersOptions.map((answer) => (
             <TextAnswer
               id={answer.id}
               key={answer.id}
               answerText={answer.answerText}
               explanation={answer.explanation}
               isCorrect={answer.isCorrect}
+              onAnswerClick={onAnswerClick}
             />
           ))}
         </div>

@@ -29,8 +29,8 @@ export const SecondaryButton = styled.button`
   border-radius: 4px;
   transition: all 0.3s;
   text-transform: capitalize;
+
   &:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #ffd000;
   }
 `;
