@@ -9,20 +9,17 @@ type ButtonProps = {
 };
 
 export const Button = ({ text, variant, onClick }: ButtonProps) => {
-  let button;
-
   if (variant === 'primary') {
-    button = (
+    return (
       <PrimaryButton onClick={onClick}>
         <Typography variant="button">{text}</Typography>
       </PrimaryButton>
     );
-  } else if (variant === 'secondary') {
-    button = (
-      <SecondaryButton onClick={onClick}>
-        <Typography variant="button">{text}</Typography>
-      </SecondaryButton>
-    );
   }
-  return <>{button}</>;
+
+  return (
+    <SecondaryButton onClick={onClick}>
+      <Typography variant="button">{text}</Typography>
+    </SecondaryButton>
+  );
 };
