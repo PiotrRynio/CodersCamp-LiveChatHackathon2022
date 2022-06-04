@@ -1,13 +1,14 @@
 import React from 'react';
-import { usePageTitle } from 'providers/PageTitleProvider';
-import { Button, Typography } from '../../components';
+import { Quiz } from 'views';
+import { TopBar } from 'components';
 
 export const App = () => {
-  const { title } = usePageTitle();
   return (
     <>
-      <Button />
-      <Typography variant="title">Title</Typography>
+      <div>
+        <TopBar />
+        <Quiz />
+      </div>
     </>
   );
 };
