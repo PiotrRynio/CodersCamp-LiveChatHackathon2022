@@ -5,14 +5,12 @@ import { Footer, MainContent, Wrapper } from './App.styled';
 
 export const App = () => {
   return (
-    <>
-      <Wrapper>
-        <TopBar />
-        <MainContent>
-          <Quiz />
-        </MainContent>
-        <Footer />
-      </Wrapper>
-    </>
+    <Wrapper>
+      <TopBar />
+      <MainContent>
+        <Quiz />
+      </MainContent>
+      <Footer />
+    </Wrapper>
   );
 };
