@@ -7,7 +7,7 @@ import { TestSummary } from 'components/TestSummary/TestSummary';
 export const App = () => {
   return (
     <>
-      <TestSummary />
+      <TestSummary result={'100%'} />
     </>
   );
 };

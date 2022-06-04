@@ -1,5 +1,3 @@
-import { FiTwitter } from 'react-icons/fi';
-import { AiOutlineFacebook, AiOutlineLinkedin } from 'react-icons/ai';
 import { IconContainer, Wrapper } from './ShareIcons.styled';
 import { SocialIcon } from 'react-social-icons';
 
