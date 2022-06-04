@@ -5,7 +5,7 @@ import { PrimaryButton, SecondaryButton } from './Button.styled';
 type ButtonProps = {
   text: string;
   variant?: 'primary' | 'secondary';
-  onClick: () => void;
+  onClick(): void;
 };
 
 export const Button = ({ text, variant = 'primary', onClick }: ButtonProps) => {

@@ -5,6 +5,7 @@ import { MainContent, Wrapper } from './App.styled';
 import { TopBar } from 'components';
 import { StartQuizPage } from '../StartQuizPage';
 import { Footer } from 'components';
+import { WelcomePage } from '../WelcomePage/WelcomePage';
 
 export const App = () => {
   return (
@@ -12,7 +13,8 @@ export const App = () => {
       <TopBar />
       <MainContent>
         <Routes>
-          <Route path="/" element={<StartQuizPage />} />s
+          <Route path="/" element={<WelcomePage />} />
+          <Route path="start-quiz" element={<StartQuizPage />} />
           <Route path="quiz" element={<Quiz />} />
         </Routes>
       </MainContent>

@@ -39,5 +39,6 @@ export const Typography = ({ children, variant = 'body1' }: TypographyProps) => 
   if (variant === 'question') {
     return <Question>{children}</Question>;
   }
+
   return <p>{children}</p>;
 };

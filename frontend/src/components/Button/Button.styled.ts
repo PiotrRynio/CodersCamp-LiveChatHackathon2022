@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const PrimaryButton = styled.button`
+  display: block;
   padding: 12px 24px;
   min-width: 150px;
   height: 58px;
@@ -29,8 +30,8 @@ export const SecondaryButton = styled.button`
   border-radius: 4px;
   transition: all 0.3s;
   text-transform: capitalize;
+
   &:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #ffd000;
   }
 `;
