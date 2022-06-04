@@ -1,3 +1,5 @@
+import { Body1, Heading3, Heading4, Button } from './Typography.styled';
+
 export interface TypographyProps {
   children: React.ReactNode;
   variant: 'title' | 'subtitle' | 'body' | 'button';
@@ -5,16 +7,16 @@ export interface TypographyProps {
 
 export const Typography = ({ children, variant = 'body' }: TypographyProps) => {
   if (variant === 'title') {
-    return <h3>{children}</h3>;
+    return <Heading3>{children}</Heading3>;
   }
   if (variant === 'subtitle') {
-    return <h4>{children}</h4>;
+    return <Heading4>{children}</Heading4>;
   }
   if (variant === 'button') {
-    return <p>{children}</p>;
+    return <Button>{children}</Button>;
   }
   if (variant === 'body') {
-    return <p>{children}</p>;
+    return <Body1>{children}</Body1>;
   }
   return <p>{children}</p>;
 };
