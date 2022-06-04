@@ -27,3 +27,17 @@ export const Button = styled.p`
   line-height: 1.5;
   margin: 0;
 `;
+
+export const Answer = styled.p`
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+`;
+
+export const AnswerDescription = styled.p`
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+`;

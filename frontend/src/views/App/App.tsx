@@ -1,6 +1,6 @@
 import React from 'react';
 import { usePageTitle } from 'providers/PageTitleProvider';
-import { Button, Typography } from '../../components';
+import { Button, Typography, Answer } from '../../components';
 
 export const App = () => {
   const { title } = usePageTitle();
@@ -8,6 +8,7 @@ export const App = () => {
     <>
       <Button />
       <Typography variant="title">Title</Typography>
+      <Answer answer={'Koń'} answerDescription={'Konie nie latają'} isCorrect={true} />
     </>
   );
 };
