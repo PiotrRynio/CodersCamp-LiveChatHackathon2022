@@ -24,5 +24,5 @@ export const Button = ({ text, variant, onClick }: ButtonProps) => {
       </SecondaryButton>
     );
   }
-  return <>{button};</>;
+  return <>{button}</>;
 };
