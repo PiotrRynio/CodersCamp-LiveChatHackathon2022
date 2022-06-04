@@ -1,17 +1,39 @@
 import { IconContainer, Wrapper } from './ShareIcons.styled';
 import { SocialIcon } from 'react-social-icons';
+import { FacebookShareButton, LinkedinShareButton, TwitterShareButton } from 'react-share';
 
-export const ShareIcons = () => {
+export interface ShareIcons {
+  result: string;
+}
+
+export const ShareIcons = ({ result }: ShareIcons) => {
   return (
     <Wrapper>
       <IconContainer>
-        <SocialIcon network="facebook" bgColor="white" style={{ height: 80, width: 80 }} />
+        <FacebookShareButton
+          url="https://testPage.pl"
+          hashtag="#dezinformacja"
+          quote={`Mój wynik w teście wynosi ${result}! A Ty jaką masz świadomość dezinformacji w sieci?`}
+        >
+          <SocialIcon network="facebook" bgColor="white" style={{ height: 80, width: 80 }} />
+        </FacebookShareButton>
       </IconContainer>
       <IconContainer>
-        <SocialIcon network="linkedin" bgColor="white" style={{ height: 80, width: 80 }} />
+        <LinkedinShareButton
+          url="https://testPage.pl"
+          title="The web developer expert in Auvergne"
+          summary="The web developer expert in Auvergne"
+        >
+          <SocialIcon network="linkedin" bgColor="white" style={{ height: 80, width: 80 }} />
+        </LinkedinShareButton>
       </IconContainer>
       <IconContainer>
-        <SocialIcon network="twitter" bgColor="white" style={{ height: 80, width: 80 }} />
+        <TwitterShareButton
+          url="https://testPage.pl"
+          title={`Mój wynik w teście wynosi ${result}! A Ty jaką masz świadomość dezinformacji w sieci?`}
+        >
+          <SocialIcon network="twitter" bgColor="white" style={{ height: 80, width: 80 }} />
+        </TwitterShareButton>
       </IconContainer>
     </Wrapper>
   );
