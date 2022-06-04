@@ -1,14 +1,18 @@
 import React from 'react';
 import { Quiz } from 'views';
 import { TopBar } from 'components';
+import { Footer, MainContent, Wrapper } from './App.styled';
 
 export const App = () => {
   return (
     <>
-      <div>
+      <Wrapper>
         <TopBar />
-        <Quiz />
-      </div>
+        <MainContent>
+          <Quiz />
+        </MainContent>
+        <Footer />
+      </Wrapper>
     </>
   );
 };
