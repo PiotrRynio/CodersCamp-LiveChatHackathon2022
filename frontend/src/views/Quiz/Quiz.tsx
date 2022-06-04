@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { usePageTitle } from 'providers/PageTitleProvider';
 import { Typography, QuestionWithAnswers, Button } from '../../components';
 import { ButtonWrapper } from './Quiz.styled';
+import { useQuizQuestion } from '../../hooks/useQuizQuestion/useQuizQuestion';
 
 type quizStates = 'start' | 'play' | 'end';
 
