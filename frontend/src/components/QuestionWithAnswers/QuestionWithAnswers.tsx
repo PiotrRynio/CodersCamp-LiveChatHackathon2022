@@ -1,35 +1,35 @@
 import { TextAnswer } from '../Answer';
 import { Typography } from '../Typography';
 import { QuestionWrapper, Wrapper } from './QuestionWithAnswers.styled';
-
-type TextAnswerProps = {
-  id: string;
-  answerText: string;
-  explanation: string;
-  isCorrect: boolean;
-};
+import { useQuizQuestion } from '../../apiHooks/useQuizQuestion/useQuizQuestion';
 
 type QuestionWithAnswersProps = {
-  question: string;
-  answers: TextAnswerProps[];
-  questionType: 'text' | 'image';
+  questionIndex: number;
   onAnswerClick(isCorrect: boolean): void;
+  onLastQuestionAnswered(): void;
 };
 
 export const QuestionWithAnswers = ({
-  question,
-  answers,
-  questionType,
+  onLastQuestionAnswered,
+  questionIndex,
   onAnswerClick,
 }: QuestionWithAnswersProps) => {
+  const { data: questionData } = useQuizQuestion(questionIndex);
+  console.log(questionIndex);
+  console.log(questionData);
+  if (!questionData) {
+    return <></>;
+  }
+
+  const { questionText, answersOptions, type } = questionData;
   return (
     <Wrapper>
       <QuestionWrapper>
-        <Typography variant={'question'}>{question}</Typography>
+        <Typography variant={'question'}>{questionText}</Typography>
       </QuestionWrapper>
-      {questionType === 'text' && (
+      {type === 'text' && (
         <div>
-          {answers.map((answer) => (
+          {answersOptions.map((answer) => (
             <TextAnswer
               id={answer.id}
               key={answer.id}

@@ -1,19 +1,16 @@
 import React, { useState } from 'react';
 import { usePageTitle } from 'providers/PageTitleProvider';
-import { Typography, QuestionWithAnswers } from '../../components';
-import questions from '../../mocks/questions.json';
-import { useQuizQuestion } from '../../apiHooks/useQuizQuestion/useQuizQuestion';
+import { Typography, QuestionWithAnswers, Button } from '../../components';
+import { ButtonWrapper } from './Quiz.styled';
 
 type quizStates = 'start' | 'play' | 'end';
 
 export const Quiz = () => {
-  const { data } = useQuizQuestion(0);
-  console.log(data);
-
-  const { setPageTitle } = usePageTitle();
   const [quizState, setQuizState] = useState<quizStates>('start');
   const [questionIndex, setQuestionIndex] = useState<number>(0);
   const [correctAnswerClicked, setCorrectAnswerClicked] = useState<boolean>(false);
+
+  const { setPageTitle } = usePageTitle();
   setPageTitle('Quiz Title');
 
   const answerClickHandler = (isCorrect: boolean): void => {
@@ -25,13 +22,15 @@ export const Quiz = () => {
   const nextQuestionButtonHandler = (): void => {
     setCorrectAnswerClicked(false);
     setQuestionIndex((prevState) => prevState + 1);
-    if (questionIndex > questions.questionsList.length) setQuestionIndex(0);
+  };
+
+  const handleLastQuestionAnswered = () => {
+    setQuestionIndex(0);
     setQuizState('end');
   };
 
   return (
     <section>
-      {/*<Button />*/}
       {quizState === 'start' && (
         <>
           <Typography variant="title">Title</Typography>
@@ -41,13 +40,18 @@ export const Quiz = () => {
       {quizState === 'play' && (
         <>
           <QuestionWithAnswers
-            questionType={questions.questionsList[questionIndex].type as 'text' | 'image'}
-            question={questions.questionsList[questionIndex].questionText}
-            answers={questions.questionsList[questionIndex].answersOptions}
+            onLastQuestionAnswered={handleLastQuestionAnswered}
+            questionIndex={questionIndex}
             onAnswerClick={answerClickHandler}
           />
           {correctAnswerClicked && (
-            <button onClick={() => nextQuestionButtonHandler()}>Następne pytanie proszę</button>
+            <ButtonWrapper>
+              <Button
+                text={'Następne pytanie proszę'}
+                onClick={() => nextQuestionButtonHandler()}
+                variant={'secondary'}
+              />
+            </ButtonWrapper>
           )}
         </>
       )}

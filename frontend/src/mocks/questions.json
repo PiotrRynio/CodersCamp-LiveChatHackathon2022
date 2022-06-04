@@ -30,6 +30,31 @@
           "explanation": "Ta odpowiedź dotyczy zjawiska deepfake. Spróbuj znaleźć tę, która jest błędna."
         }
       ]
+    },
+    {
+      "id": "2",
+      "questionText": "Które za zdań jest faktem?",
+      "type": "text",
+      "answersOptions": [
+        {
+          "id": "1",
+          "answerText": "Większość Polaków posiada telefon komórkowy",
+          "isCorrect": false,
+          "explanation": "Ta odpowiedź dotyczy zjawiska deepfake. Spróbuj znaleźć tę, która jest błędna."
+        },
+        {
+          "id": "2",
+          "answerText": "Szerzenie ideologii komunistycznej i faszystowskiej jest w Polsce nielegalne",
+          "isCorrect": true,
+          "explanation": "Zgadza się, ta odpowiedź jest błędna! Technologia deepfake nie tworzy nowej treści. Jeśli chcesz dowiedzieć się więcej o zjawisku deepfake polecamy odwiedzić stronę: https://ose.gov.pl/aktualnosci/wpis/czy-to-nagranie-moze-klamac-uwaga-na-deepfake"
+        },
+        {
+          "id": "3",
+          "answerText": "Założenie rodziny jest najważniejszą sprawą w życiu Polaka",
+          "isCorrect": false,
+          "explanation": "Ta odpowiedź dotyczy zjawiska deepfake. Spróbuj znaleźć tę, która jest błędna."
+        }
+      ]
     }
   ]
 }
