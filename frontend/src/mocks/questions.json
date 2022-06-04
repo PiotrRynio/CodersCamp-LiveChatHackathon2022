@@ -55,6 +55,37 @@
           "explanation": "Ta odpowiedź dotyczy zjawiska deepfake. Spróbuj znaleźć tę, która jest błędna."
         }
       ]
+    },
+    {
+      "id": "3",
+      "questionText": "Na portalu społecznościowym czytasz informację o tym, że w Twoim mieście mają zostać zamknięte wszyskie sklepy. Czego nie powinieneś robić w takiej sytuacji?",
+      "type": "text",
+      "answersOptions": [
+        {
+          "id": "8",
+          "answerText": "Sprawdzić czy strona, z której pochodzi informacja jest wiarygodna  i nikt się pod nią nie podszywa.",
+          "isCorrect": false,
+          "explanation": "Ta odpowiedź jest błędna. Powinieneś sprawdzić czy adres strony jest poprawny i czy nikt nie próbuje się pod nią podszyć lub czy nie jest to nowa strona, zrobiona do szerzenia dezinformacji"
+        },
+        {
+          "id": "9",
+          "answerText": "Zrobić zakupy, udostępniając po drodzie post, żeby poinformować znajomych.",
+          "isCorrect": true,
+          "explanation": "Zgadza się, ta odpowiedź jest prawidłowa! Powinno się zweryfikować autorów i źródła informacji, zanim podejmie się dalsze działania. Nie powinno się również rozprzestrzeniać niezweryfikowanych informacji, ponieważ to tylko pomaga rozpowszechaniu nieprawdziwych informacji."
+        },
+        {
+          "id": "10",
+          "answerText": "Sprawdzić źródła na które powołuje się autor artykułu.",
+          "isCorrect": false,
+          "explanation": "Ta odpowiedź jest nieprawidłowa. Należy sprawdzić źródła informacji i czy autor artykułu nie powiedział np. tylko części faktów lub ukrył kontekst, skutkiem czego wprowadza czytelnikow w błąd."
+        },
+        {
+          "id": "11",
+          "answerText": "Sprawdzić czy artykuł występuje również na innych znanych Ci wiarygodnych portalach z wiadomościami.",
+          "isCorrect": false,
+          "explanation": "To błędna odpowiedź. Porównując materiały można sprawdzić czy informacja nie została przedstawiona w części lub w złym świetle."
+        }
+      ]
     }
   ]
 }
