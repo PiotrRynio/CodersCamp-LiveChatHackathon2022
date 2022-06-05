@@ -12,22 +12,6 @@ import {
 } from './StartQuizPage.styles';
 
 export const StartQuizPage = () => {
-  // const { playerName, setPlayerName } = useAppContext();
-  // const [name] = useState('');
-  // const [showWarning, setShowWarning] = useState(false);
-
-  // const handleWarning = (value: boolean) => {
-  //   setShowWarning(value);
-  // }
-
-  // const onClick = () => {
-  //   console.log(playerName.length < 2);
-  //   if (playerName.length < 3) {
-  //     return handleWarning(!showWarning);
-  //   };
-  //   setPlayerName(name);
-  // };
-
   const { playerName, setPlayerName, showWarning, handleWarning, handleStartGame } = useStartQuizPage();
 
   return (

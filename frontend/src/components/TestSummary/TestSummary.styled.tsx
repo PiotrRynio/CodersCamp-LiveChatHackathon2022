@@ -22,6 +22,8 @@ export const ResultValue = styled.span`
 `;
 
 export const TestSummaryContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   padding: 15px;
   width: 913px;
   height: 648px;
@@ -29,5 +31,9 @@ export const TestSummaryContainer = styled.div`
   border: 1px black solid;
   border-radius: 20px;
   letter-spacing: 0.5px;
-  position: relative;
+  margin: 30px auto;
+`;
+
+export const ButtonWrapper = styled.div`
+  margin: auto;
 `;

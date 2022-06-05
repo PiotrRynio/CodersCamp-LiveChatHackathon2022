@@ -3,34 +3,35 @@ import styled from 'styled-components';
 export const Title = styled.h3`
   font-size: 55px;
   font-weight: 900;
-  line-height: 57px;
+  line-height: 1.4;
+
   margin: 0;
 `;
 
 export const Subtitle = styled.h4`
   font-size: 41px;
   font-weight: 900;
-  line-height: 50px;
+  line-height: 1.4;
   margin: 0;
 `;
 
 export const Body1 = styled.p`
   font-size: 23px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 1.4;
+
   margin: 0;
 `;
 
 export const Body2 = styled.p`
   font-size: 18px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1.4;
+
   margin: 0;
 `;
 
 export const Button = styled.p`
-  font-size: 14px;
-  font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
   font-weight: 700;
@@ -54,7 +55,7 @@ export const AnswerDescription = styled.p`
 export const Question = styled.p`
   font-size: 30px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.4;
   margin: auto;
   text-align: center;
   background: linear-gradient(-225deg, #0000 10px, #ffd000 10px) bottom left,
@@ -70,6 +71,6 @@ export const StartQuizDescription = styled.h6`
   font-size: 30px;
   text-align: center;
   font-weight: 400;
-  line-height: 35px;
+  line-height: 1.4;
   margin: 0;
 `;

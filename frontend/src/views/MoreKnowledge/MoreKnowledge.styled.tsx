@@ -14,8 +14,18 @@ export const ListWrapper = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  align-items: center;
-  justify-content: flex-start;
   width: 100%;
   margin: 32px 0;
+`;
+
+export const ListItem = styled.div`
+  padding: 16px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 80%;
+  border-top: 2px solid #ff2b00;
 `;
