@@ -40,11 +40,24 @@ export const PageTitle = styled.div`
   border-left: 1px solid #e6e6e6;
   margin-left: 8px;
 `;
-export const StyledLink = styled(Link)``;
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  font-weight: 400;
+  &,
+  &:visited {
+    color: #272727;
+  }
+
+  &:not(:last-child) {
+    border-right: 1px solid #e6e6e6;
+  }
+`;
 
 export const TextLink = styled.span`
   margin: 10px;
   &:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
 `;
