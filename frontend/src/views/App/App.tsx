@@ -17,7 +17,7 @@ export const App = () => {
           <Route path="/" element={<WelcomePage />} />
           <Route path="start-quiz" element={<StartQuizPage />} />
           <Route path="quiz" element={<Quiz />} />
-          <Route path="verify-information" element={<VerifyInformation />} />
+          <Route path="verify-news" element={<VerifyInformation />} />
         </Routes>
       </MainContent>
       <Footer />
