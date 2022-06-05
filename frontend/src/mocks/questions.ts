@@ -248,7 +248,7 @@ export const questionsListMock = {
         {
           id: '25',
           answerText: 'Pozwalają użytkownikowi porównać dany news w różnych miejscach w internecie.',
-          isCorrect: false,
+          isCorrect: true,
           explanation:
             'Brawo! Czytniki RSS (Rich Site Summary) służą do "zasysania" treści z wybranych portali informacyjnych, blogów a także np.kont twitterowych. Przykładem takich wyszukiwarek jest http://www.rssowl.org/. ',
           source: ['Źródło', 'https://panoptykon.org/stop-dezinformacji-przewodnik'],
