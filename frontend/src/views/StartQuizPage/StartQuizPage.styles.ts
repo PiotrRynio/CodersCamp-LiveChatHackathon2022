@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 export const StyledStartQuizPage = styled.section`
   flex-grow: 1;
-<<<<<<< HEAD
   align-items: center;
   margin: 0 auto;
 `;
@@ -39,7 +38,7 @@ export const StyledLink = styled(Link)`
   }
 `;
 
-export const StledForm = styled.div`
+export const StyledForm = styled.div`
   display: flex;
   justify-content: space-around;
   padding: 40px 20px;

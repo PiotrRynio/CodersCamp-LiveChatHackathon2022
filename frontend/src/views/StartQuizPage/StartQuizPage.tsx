@@ -6,7 +6,7 @@ import {
   StyledTypographyWrapper,
   StyledInputWrapper,
   StyledLink,
-  StledForm,
+  StyledForm,
   StyledSubtitleTypographyWrapper,
 } from './StartQuizPage.styles';
 import { useState } from 'react';
@@ -31,14 +31,14 @@ export const StartQuizPage = () => {
           social mediach.
         </Typography>
       </StyledTypographyWrapper>
-      <StledForm>
+      <StyledForm>
         <StyledInputWrapper>
           <PlayerNameInput onChange={setPlayerName} value={playerName} />
         </StyledInputWrapper>
         <StyledLink onClick={onClick} to="/quiz">
           <Typography variant="button">Zacznij Quiz</Typography>
         </StyledLink>
-      </StledForm>
+      </StyledForm>
     </StyledStartQuizPage>
   );
 };
