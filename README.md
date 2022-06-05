@@ -22,9 +22,6 @@ Aplikacja ma na celu poszerzanie świadomosci oraz edukowanie na temat dezinform
 - React
 - React Hooks
 - React Router
-- React Query
 - Typescript
-- concurrently lib
-- axios lib
 - Styled Components
 - uuid
