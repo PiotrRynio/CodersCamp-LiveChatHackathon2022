@@ -8,6 +8,7 @@ export type QuizQuestion =
         answerText: string;
         isCorrect: boolean;
         explanation: string;
+        source?: [string, string];
       }[];
     }
   | {
@@ -19,5 +20,6 @@ export type QuizQuestion =
         answerImage: string;
         isCorrect: boolean;
         explanation: string;
+        source?: [string, string];
       }[];
     };

@@ -60,8 +60,8 @@ export const Answer = styled.p`
 `;
 
 export const AnswerDescription = styled.p`
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 600;
   line-height: 1.5;
   margin: 0;
 `;
