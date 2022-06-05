@@ -31,3 +31,26 @@ export const ListItem = styled.div`
   width: 80%;
   border-top: 2px solid #ff2b00;
 `;
+
+export const StyledLink = styled.a`
+  background-color: #fff;
+  display: inline-block;
+  padding: 3px 7px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: 1px solid #666;
+  transition: all 0.3s ease;
+
+  &,
+  &:active {
+    color: #666;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: #ffd000;
+    border: 1px solid #000;
+    color: #000;
+  }
+`;
