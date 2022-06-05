@@ -8,6 +8,7 @@ import { Footer } from 'components';
 import { WelcomePage } from '../WelcomePage/WelcomePage';
 import { VerifyNews } from '../VerifyNews';
 import { VerifyTwitt } from '../VerifyTwitt';
+import { MoreKnowledge } from '../MoreKnowledge';
 
 export const App = () => {
   return (
@@ -18,6 +19,7 @@ export const App = () => {
           <Route path="/" element={<WelcomePage />} />
           <Route path="start-quiz" element={<StartQuizPage />} />
           <Route path="quiz" element={<Quiz />} />
+          <Route path="more-knowledge" element={<MoreKnowledge />} />
           <Route path="verify-news" element={<VerifyNews />} />
           <Route path="verify-twitt" element={<VerifyTwitt />} />
         </Routes>
