@@ -6,17 +6,17 @@ import {
   VerifyInformationQuestion,
   VerifyInformationQuestionId,
 } from '../../components/VerifyInformationIOuestion';
-import { verifyInformationQuestionsListMock } from '../../mocks/verifyInformationQuestionsListMock';
+import { verifyTwittQuestionsListMock } from '../../mocks/verifyTwittQuestionsListMock';
 import { FakeRiskInformation } from '../../components/FakeRiskInformation';
 import { usePageTitle } from '../../providers/PageTitleProvider';
 
 export type Answers = Record<VerifyInformationQuestionId, ClickedButton>;
 
-export const VerifyNews = () => {
+export const VerifyTwitt = () => {
   const { setPageTitle } = usePageTitle();
   setPageTitle('Verify Twitt');
 
-  const listLength = verifyInformationQuestionsListMock.length;
+  const listLength = verifyTwittQuestionsListMock.length;
   const [answers, setAnswers] = useState<Answers>({});
 
   const onAnswerButtonClick = ({ id, clickedButton }: { id: string; clickedButton: ClickedButton }) => {
@@ -27,7 +27,7 @@ export const VerifyNews = () => {
 
   return (
     <Wrapper>
-      <Typography variant="title">Zweryfikuj artykuł</Typography>
+      <Typography variant="title">Zweryfikuj tweeta</Typography>
       <div>
         <Typography variant="body1">
           Nie jest łatwo oddzielić prawdziwią informację od fakenewsa Wypełnij poniższe podpunkty, aby
@@ -35,7 +35,7 @@ export const VerifyNews = () => {
         </Typography>
       </div>
       <ListWrapper>
-        {verifyInformationQuestionsListMock.map(({ question, id }) => (
+        {verifyTwittQuestionsListMock.map(({ question, id }) => (
           <VerifyInformationQuestion key={id} text={question} id={id} onButtonClick={onAnswerButtonClick} />
         ))}
       </ListWrapper>

@@ -6,7 +6,7 @@ import {
   VerifyInformationQuestion,
   VerifyInformationQuestionId,
 } from '../../components/VerifyInformationIOuestion';
-import { verifyInformationQuestionsListMock } from '../../mocks/verifyInformationQuestionsListMock';
+import { verifyNewsQuestionsListMock } from '../../mocks/verifyNewsQuestionsListMock';
 import { FakeRiskInformation } from '../../components/FakeRiskInformation';
 import { usePageTitle } from '../../providers/PageTitleProvider';
 
@@ -16,7 +16,7 @@ export const VerifyNews = () => {
   const { setPageTitle } = usePageTitle();
   setPageTitle('Verify News');
 
-  const listLength = verifyInformationQuestionsListMock.length;
+  const listLength = verifyNewsQuestionsListMock.length;
   const [answers, setAnswers] = useState<Answers>({});
 
   const onAnswerButtonClick = ({ id, clickedButton }: { id: string; clickedButton: ClickedButton }) => {
@@ -35,7 +35,7 @@ export const VerifyNews = () => {
         </Typography>
       </div>
       <ListWrapper>
-        {verifyInformationQuestionsListMock.map(({ question, id }) => (
+        {verifyNewsQuestionsListMock.map(({ question, id }) => (
           <VerifyInformationQuestion key={id} text={question} id={id} onButtonClick={onAnswerButtonClick} />
         ))}
       </ListWrapper>

@@ -1,4 +1,4 @@
-export const verifyInformationQuestionsListMock = [
+export const verifyNewsQuestionsListMock = [
   {
     question: 'Czy artykuł ma krzykliwy lub bulwersujący tytuł?',
     id: '1',

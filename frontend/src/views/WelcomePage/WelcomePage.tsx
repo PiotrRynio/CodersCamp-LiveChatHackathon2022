@@ -1,6 +1,5 @@
 import {
   ContentWrapper,
-  TitleWrapper,
   Wrapper,
   ButtonSection,
   TextWrapper,
@@ -8,7 +7,6 @@ import {
   Image,
   StyledLink,
 } from './WelcomePage.styled';
-import { Button } from 'components/Button/Button';
 import { Typography } from '../../components';
 import trolImage from 'assets/images/trolImage.png';
 
