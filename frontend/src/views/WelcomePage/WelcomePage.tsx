@@ -6,6 +6,7 @@ import {
   TextWrapper,
   ImageWrapper,
   Image,
+  StyledLink,
 } from './WelcomePage.styled';
 import { Button } from 'components/Button/Button';
 import { Typography } from '../../components';
@@ -18,7 +19,7 @@ export const WelcomePage = () => {
         <ContentWrapper>
           <TextWrapper>
             <Typography variant={'title'}>Czy nie dasz się złapać dezinformacji?</Typography>
-            <Typography variant={'body'}>
+            <Typography variant={'body1'}>
               “Wydaje się, że najskuteczniejszym sposobem zwalczania dezinformacji są świadomi, krytyczni i
               wyedukowani internauci. Wiedza i edukacja to obecnie najlepsza odpowiedź na to negatywne
               zjawisko.”
@@ -29,8 +30,8 @@ export const WelcomePage = () => {
           </ImageWrapper>
         </ContentWrapper>
         <ButtonSection>
-          <Typography variant={'body'}>Sprawdź się ze znajomymi. Naucz ich, jak działać w sieci!</Typography>
-          <Button text={'Zaczynamy!'} onClick={() => console.log('XD')} variant={'primary'} />
+          <Typography variant={'body1'}>Sprawdź się ze znajomymi. Naucz ich, jak działać w sieci!</Typography>
+          <StyledLink to="start-quiz">Zaczynamy!</StyledLink>
         </ButtonSection>
       </Wrapper>
     </>
