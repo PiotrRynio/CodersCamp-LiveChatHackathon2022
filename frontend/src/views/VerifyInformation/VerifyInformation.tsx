@@ -21,7 +21,7 @@ export const VerifyInformation = () => {
   return (
     <Wrapper>
       <Typography variant="title">Zweryfikuj artykuł</Typography>
-      <Typography variant="body">
+      <Typography variant="body1">
         Wypełnij poniższe podpunkty, aby określić szansę na prawdziwość informacji:
       </Typography>
       <ListWrapper>

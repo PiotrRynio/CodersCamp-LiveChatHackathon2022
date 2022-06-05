@@ -22,7 +22,7 @@ export const VerifyInformationQuestion = ({ onButtonClick, id, text }: VerifyInf
   return (
     <Wrapper>
       <TextWrapper>
-        <Typography variant="body">{text}</Typography>
+        <Typography variant="body1">{text}</Typography>
       </TextWrapper>
       <ButtonsWrapper>
         <Button
