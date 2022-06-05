@@ -6,15 +6,16 @@ export const Wrapper = styled.div`
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  justify-content: flex-start;
 `;
 
-export const MainContent = styled.div`
+export const ListWrapper = styled.div`
+  position: relative;
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: column;
-  min-height: calc(100vh - 56px - 100px);
-  width: 1200px;
-  margin: 32px 0px;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 32px 0;
 `;

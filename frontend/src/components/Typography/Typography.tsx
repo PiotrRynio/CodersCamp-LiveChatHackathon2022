@@ -6,12 +6,22 @@ import {
   Button,
   Answer,
   AnswerDescription,
+  StartQuizDescription,
   Question,
 } from './Typography.styled';
 
 export interface TypographyProps {
   children: React.ReactNode;
-  variant: 'title' | 'subtitle' | 'body1' | 'body2' | 'button' | 'answer' | 'answerDescription' | 'question';
+  variant:
+    | 'title'
+    | 'subtitle'
+    | 'body1'
+    | 'body2'
+    | 'button'
+    | 'answer'
+    | 'answerDescription'
+    | 'question'
+    | 'startQuizDescription';
 }
 
 export const Typography = ({ children, variant = 'body1' }: TypographyProps) => {
@@ -28,7 +38,7 @@ export const Typography = ({ children, variant = 'body1' }: TypographyProps) => 
     return <Body1>{children}</Body1>;
   }
   if (variant === 'body2') {
-    return <Body1>{children}</Body1>;
+    return <Body2>{children}</Body2>;
   }
   if (variant === 'answer') {
     return <Answer>{children}</Answer>;
@@ -38,6 +48,9 @@ export const Typography = ({ children, variant = 'body1' }: TypographyProps) => 
   }
   if (variant === 'question') {
     return <Question>{children}</Question>;
+  }
+  if (variant === 'startQuizDescription') {
+    return <StartQuizDescription>{children}</StartQuizDescription>;
   }
 
   return <p>{children}</p>;
