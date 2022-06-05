@@ -61,7 +61,7 @@ export const Answer = styled.p`
 
 export const AnswerDescription = styled.p`
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.5;
   margin: 0;
 `;
