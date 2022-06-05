@@ -108,7 +108,7 @@ export const questionsListMock = {
       id: '4',
       questionText:
         'Dostałeś wiadomość na facebooku, na którym użytkownik wykorzystuje poniższe zdjęcie profilowe. Które ze zdjęć mogą wskazywać na oszustwo?',
-      type: 'images',
+      type: 'image',
       answersOptions: [
         {
           id: '12',

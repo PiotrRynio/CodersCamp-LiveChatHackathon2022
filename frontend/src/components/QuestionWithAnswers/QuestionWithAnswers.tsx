@@ -21,6 +21,7 @@ export const QuestionWithAnswers = ({
   if (questionsNumber <= questionIndex) {
     onLastQuestionAnswered();
   }
+  console.log(questionData);
 
   if (!questionData) {
     return <></>;

@@ -1,6 +1,9 @@
 import styled from 'styled-components';
+import { MdCheck, MdClose } from 'react-icons/md';
 
 export const Wrapper = styled.div`
+  display: flex;
+  align-items: flex-start;
   max-width: 800px;
   margin: auto;
   border: 1px solid black;
@@ -38,10 +41,22 @@ export const Wrapper = styled.div`
 export const Image = styled.img`
   height: 168px;
   width: 100px;
+  object-fit: cover;
 `;
 
 export const DescriptionWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 10px;
+`;
+
+export const CorrectIcon = styled(MdCheck)`
+  color: darkgreen;
+  font-size: 75px;
+`;
+
+export const WrongIcon = styled(MdClose)`
+  color: darkred;
+  font-size: 75px;
 `;

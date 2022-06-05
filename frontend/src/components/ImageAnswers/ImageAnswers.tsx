@@ -1,7 +1,6 @@
 import { Typography } from '../Typography';
 import { useState } from 'react';
-import { MdCheck, MdClose } from 'react-icons/md';
-import { DescriptionWrapper, Wrapper, Image } from './ImageAnswers.styled';
+import { DescriptionWrapper, Wrapper, Image, CorrectIcon, WrongIcon } from './ImageAnswers.styled';
 
 type ImageAnswerProps = {
   id: string;
@@ -24,7 +23,7 @@ export const ImageAnswers = ({ answerSource, explanation, isCorrect, onAnswerCli
       <Image src={answerSource} />
       <DescriptionWrapper>
         {clicked && <Typography variant={'answerDescription'}>{explanation}</Typography>}
-        {clicked && (isCorrect ? <MdCheck /> : <MdClose />)}
+        {clicked && (isCorrect ? <CorrectIcon /> : <WrongIcon />)}
       </DescriptionWrapper>
     </Wrapper>
   );
