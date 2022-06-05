@@ -13,7 +13,7 @@ export const FakeRiskInformation = ({ answers, listLength }: FakeRiskInformation
   if (!isAllAnswersSelected) {
     return (
       <Typography variant="body1">
-        Odpowiedz na WSZYSTKIE pytania aby poznać ryzyko, że jest to fake.
+        <b>Odpowiedz na WSZYSTKIE pytania aby poznać ryzyko, że jest to fake.</b>
       </Typography>
     );
   }
@@ -33,6 +33,8 @@ export const FakeRiskInformation = ({ answers, listLength }: FakeRiskInformation
   };
 
   return (
-    <Typography variant="body1">Istnieje {riskOfFake().toUpperCase()}, że artykuł jest fakiem.</Typography>
+    <Typography variant="body1">
+      <b>Istnieje {riskOfFake().toUpperCase()}, że artykuł jest fakiem.</b>
+    </Typography>
   );
 };
