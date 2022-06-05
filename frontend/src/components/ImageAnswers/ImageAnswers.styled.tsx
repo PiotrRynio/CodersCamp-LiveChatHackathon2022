@@ -53,12 +53,23 @@ export const DescriptionWrapper = styled.div`
 
 export const CorrectIcon = styled(MdCheck)`
   color: darkgreen;
-  font-size: 75px;
+  font-size: 56px;
 `;
 
 export const WrongIcon = styled(MdClose)`
   color: darkred;
-  font-size: 75px;
+  font-size: 56px;
 `;
 
-export const Link = styled.a``;
+export const IconWrapper = styled.div`
+  width: 50px;
+`;
+
+export const Link = styled.a`
+  display: inline-block;
+  transform: skewX(-10deg);
+  padding: 0 2px;
+  color: #000000;
+  text-decoration: none;
+  background-color: #ffd000;
+`;
