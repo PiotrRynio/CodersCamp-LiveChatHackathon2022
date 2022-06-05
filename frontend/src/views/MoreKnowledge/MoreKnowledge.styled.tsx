@@ -16,6 +16,8 @@ export const ListWrapper = styled.div`
   flex-wrap: nowrap;
   width: 100%;
   margin: 32px 0;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const ListItem = styled.div`
