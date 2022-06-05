@@ -25,10 +25,10 @@ export const TopBar = () => {
             <TextLink>Quiz</TextLink>
           </StyledLink>
           <StyledLink to="verify-news">
-            <TextLink>NewsFakemeter</TextLink>
+            <TextLink>News FakeMeter</TextLink>
           </StyledLink>
           <StyledLink to="verify-twitt">
-            <TextLink>TweetFakemeter</TextLink>
+            <TextLink>Tweet FakeMeter</TextLink>
           </StyledLink>
           <StyledLink to="more-knowledge">
             <TextLink>Dobre źródła</TextLink>
