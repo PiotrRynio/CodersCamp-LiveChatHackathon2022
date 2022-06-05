@@ -1,6 +1,7 @@
 import { Typography } from '../Typography';
 import { useState } from 'react';
 import { DescriptionWrapper, Wrapper, Image, CorrectIcon, WrongIcon, Link } from './ImageAnswers.styled';
+import { ImageWrapper } from '../../views/WelcomePage/WelcomePage.styled';
 
 type ImageAnswerProps = {
   id: string;
@@ -35,7 +36,7 @@ export const ImageAnswers = ({
             {source && <Link href={source[1]}>{source[0]}</Link>}
           </Typography>
         )}
-        {clicked && (isCorrect ? <CorrectIcon /> : <WrongIcon />)}
+        {clicked && <ImageWrapper>{isCorrect ? <CorrectIcon /> : <WrongIcon />}</ImageWrapper>}
       </DescriptionWrapper>
     </Wrapper>
   );
