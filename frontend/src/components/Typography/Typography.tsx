@@ -12,7 +12,16 @@ import {
 
 export interface TypographyProps {
   children: React.ReactNode;
-  variant: 'title' | 'subtitle' | 'body1' | 'body2' | 'button' | 'answer' | 'answerDescription' | 'question';
+  variant:
+    | 'title'
+    | 'subtitle'
+    | 'body1'
+    | 'body2'
+    | 'button'
+    | 'answer'
+    | 'answerDescription'
+    | 'question'
+    | 'startQuizDescription';
 }
 
 export const Typography = ({ children, variant = 'body1' }: TypographyProps) => {
