@@ -1,4 +1,4 @@
-import { StyledWrapper, StyledInnerWrapper } from './WarningModal.style';
+import { StyledInnerWrapper } from './WarningModal.style';
 import { Typography } from '../Typography';
 import { Button } from '../Button';
 import { useState } from 'react';
@@ -11,11 +11,9 @@ type WarningModalProps = {
 
 export const WarningModal = ({ children, showWarning, handleWarning }: WarningModalProps) => {
   return (
-    <StyledWrapper showWarning={showWarning}>
-      <StyledInnerWrapper>
-        <Typography variant="body1">{children}</Typography>
-        <Button text="Rozumiem" onClick={() => handleWarning(!showWarning)} />
-      </StyledInnerWrapper>
-    </StyledWrapper>
+    <StyledInnerWrapper showWarning={showWarning}>
+      <Typography variant="body1">{children}</Typography>
+      <Button text="Rozumiem" onClick={() => handleWarning(!showWarning)} />
+    </StyledInnerWrapper>
   );
 };
