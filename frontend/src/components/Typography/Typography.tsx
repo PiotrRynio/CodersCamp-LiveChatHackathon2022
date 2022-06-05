@@ -3,6 +3,8 @@ import {
   Body2,
   Title,
   Subtitle,
+  Subtitle1,
+  Subtitle2,
   Button,
   Answer,
   AnswerDescription,
@@ -15,6 +17,8 @@ export interface TypographyProps {
   variant:
     | 'title'
     | 'subtitle'
+    | 'subtitle1'
+    | 'subtitle2'
     | 'body1'
     | 'body2'
     | 'button'
@@ -30,6 +34,12 @@ export const Typography = ({ children, variant = 'body1' }: TypographyProps) => 
   }
   if (variant === 'subtitle') {
     return <Subtitle>{children}</Subtitle>;
+  }
+  if (variant === 'subtitle1') {
+    return <Subtitle1>{children}</Subtitle1>;
+  }
+  if (variant === 'subtitle2') {
+    return <Subtitle2>{children}</Subtitle2>;
   }
   if (variant === 'button') {
     return <Button>{children}</Button>;

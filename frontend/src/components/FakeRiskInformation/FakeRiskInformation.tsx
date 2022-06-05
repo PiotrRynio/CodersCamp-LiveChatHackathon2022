@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography } from '../Typography';
-import { Answers } from '../../views/VerifyInformation';
+import { Answers } from '../../views/VerifyNews';
 
 type FakeRiskInformationProps = {
   answers: Answers;
@@ -13,7 +13,7 @@ export const FakeRiskInformation = ({ answers, listLength }: FakeRiskInformation
   if (!isAllAnswersSelected) {
     return (
       <Typography variant="body1">
-        <b>Odpowiedz na WSZYSTKIE pytania aby poznać ryzyko, że jest to fake.</b>
+        <b>Aby poznać poziom ryzyka odpowiedz najpierw na WSZYSTKIE pytania.</b>
       </Typography>
     );
   }
@@ -33,8 +33,15 @@ export const FakeRiskInformation = ({ answers, listLength }: FakeRiskInformation
   };
 
   return (
-    <Typography variant="body1">
-      <b>Istnieje {riskOfFake().toUpperCase()}, że artykuł jest fakiem.</b>
-    </Typography>
+    <>
+      <Typography variant="body1">
+        <b>Naszym zdaniem istnieje {riskOfFake().toUpperCase()} ryzyko, że artykuł to fake.</b>
+      </Typography>
+      <Typography variant="subtitle2">
+        {' '}
+        Pamiętaj jednak, że nie jesteśmy nieomylni i możemy się mylić. Zawsze staraj się weryfikować
+        informację w kilku źródłach!
+      </Typography>
+    </>
   );
 };
