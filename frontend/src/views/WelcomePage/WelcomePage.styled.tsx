@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 
-  width: 100%;
+  max-width: 100%;
 `;
 
 export const ContentWrapper = styled.div`
@@ -46,7 +46,6 @@ export const StyledLink = styled(Link)`
   display: inline-block;
   padding: 12px 24px;
   min-width: 150px;
-  height: 58px;
   color: #fff;
   background-color: #ff2b00;
   outline: none;
@@ -54,7 +53,6 @@ export const StyledLink = styled(Link)`
   border-radius: 4px;
   transition: all 0.3s;
   text-transform: capitalize;
-  font-size: 30px;
   text-transform: uppercase;
   text-decoration: none;
   align-self: center;

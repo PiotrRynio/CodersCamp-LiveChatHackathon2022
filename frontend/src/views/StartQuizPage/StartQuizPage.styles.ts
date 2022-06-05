@@ -3,29 +3,25 @@ import styled from 'styled-components';
 
 export const StyledStartQuizPage = styled.section`
   flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 `;
 
 export const StyledTypographyWrapper = styled.div`
-  padding: 20px 40px;
-  border-radius: 5px;
-  background-color: #ffcf01;
   margin: 0 auto;
-  max-width: 900px;
+  padding: 40px 20px;
+  border-bottom: 2px solid #ff2b00;
+  border-top: 2px solid #ff2b00;
 `;
 
 export const StyledInputWrapper = styled.div`
   align-self: center;
-  // background-color: #4997FF;
 `;
 
 export const StyledLink = styled(Link)`
   display: inline-block;
   padding: 12px 24px;
   min-width: 150px;
-  height: 58px;
   color: #fff;
   background-color: #ff2b00;
   outline: none;
@@ -33,7 +29,6 @@ export const StyledLink = styled(Link)`
   border-radius: 4px;
   transition: all 0.3s;
   text-transform: capitalize;
-  font-size: 30px;
   text-transform: uppercase;
   text-decoration: none;
   align-self: center;
@@ -41,4 +36,19 @@ export const StyledLink = styled(Link)`
   &:hover {
     background-color: #e02600;
   }
+`;
+
+export const StyledForm = styled.div`
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  margin: 0 auto;
+  max-width: 700px;
+  border-radius: 5px;
+`;
+
+export const StyledSubtitleTypographyWrapper = styled.div`
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
 `;
