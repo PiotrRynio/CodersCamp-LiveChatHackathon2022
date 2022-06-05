@@ -4,6 +4,7 @@ import { MainContent, Wrapper } from './App.styled';
 import { TopBar } from 'components';
 import { Footer } from 'components';
 import { WelcomePage } from '../WelcomePage/WelcomePage';
+import { VerifyInformation } from '../VerifyInformation';
 
 export const App = () => {
   return (
@@ -11,7 +12,8 @@ export const App = () => {
       <TopBar />
       <MainContent>
         {/*<Quiz />*/}
-        <WelcomePage />
+        <VerifyInformation />
+        {/*<WelcomePage />*/}
       </MainContent>
       <Footer />
     </Wrapper>
