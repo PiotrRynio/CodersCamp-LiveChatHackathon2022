@@ -10,5 +10,5 @@ export const Wrapper = styled.footer`
 `;
 
 export const FooterText = styled.p`
-  font-size: 12px;
+  font-size: 18px;
 `;

@@ -16,5 +16,5 @@ export const MainContent = styled.div`
   flex-direction: column;
   min-height: calc(100vh - 56px - 100px);
   width: 1200px;
-  margin: 32px 0px;
+  padding: 32px 0;
 `;
