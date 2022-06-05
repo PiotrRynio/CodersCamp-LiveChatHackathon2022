@@ -9,15 +9,11 @@ export const verifyTwittQuestionsListMock = [
     id: '2',
   },
   {
-    question: 'Czy konto w ostatnim czasie publikuje niezwykle często, albo regularnie o tej samej porze?',
+    question: 'Czy treści które publikuje konto nie są własne (podaje treści innych osób)?',
     id: '3',
   },
   {
-    question: 'Czy treści które publikuje konto nie są własne (podaje treści innych osób)?',
-    id: '4',
-  },
-  {
     question: 'Czy konto ma znacznie większą ilość użytkowników których followuje, niż obserwujących je?',
-    id: '5',
+    id: '4',
   },
 ];

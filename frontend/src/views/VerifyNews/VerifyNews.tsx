@@ -30,8 +30,8 @@ export const VerifyNews = () => {
       <Typography variant="title">Zweryfikuj artykuł</Typography>
       <div>
         <Typography variant="body1">
-          Nie jest łatwo oddzielić prawdziwią informację od fakenewsa Wypełnij poniższe podpunkty, aby
-          określić szansę na prawdziwość informacji
+          Nie jest łatwo oddzielić prawdziwią informację od fakenewsa. Wypełnij poniższe podpunkty, aby
+          określić szansę na prawdziwość informacji.
         </Typography>
       </div>
       <ListWrapper>
