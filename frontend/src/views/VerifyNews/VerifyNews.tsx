@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ListWrapper, Wrapper, SourceWrapper } from './VerifyInformation.styled';
+import { ListWrapper, Wrapper, SourceWrapper } from './VerifyNews.styled';
 import { Typography } from '../../components';
 import {
   ClickedButton,
@@ -12,9 +12,9 @@ import { usePageTitle } from '../../providers/PageTitleProvider';
 
 export type Answers = Record<VerifyInformationQuestionId, ClickedButton>;
 
-export const VerifyInformation = () => {
+export const VerifyNews = () => {
   const { setPageTitle } = usePageTitle();
-  setPageTitle('Verify Information');
+  setPageTitle('Verify News');
 
   const listLength = verifyInformationQuestionsListMock.length;
   const [answers, setAnswers] = useState<Answers>({});
@@ -28,9 +28,12 @@ export const VerifyInformation = () => {
   return (
     <Wrapper>
       <Typography variant="title">Zweryfikuj artykuł</Typography>
-      <Typography variant="body1">
-        Wypełnij poniższe podpunkty, aby określić szansę na prawdziwość informacji:
-      </Typography>
+      <div>
+        <Typography variant="body1">
+          Nie jest łatwo oddzielić prawdziwią informację od fakenewsa Wypełnij poniższe podpunkty, aby
+          określić szansę na prawdziwość informacji
+        </Typography>
+      </div>
       <ListWrapper>
         {verifyInformationQuestionsListMock.map(({ question, id }) => (
           <VerifyInformationQuestion key={id} text={question} id={id} onButtonClick={onAnswerButtonClick} />

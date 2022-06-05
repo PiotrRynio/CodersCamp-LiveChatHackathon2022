@@ -18,7 +18,7 @@ export const WelcomePage = () => {
       <Wrapper>
         <ContentWrapper>
           <TextWrapper>
-            <Typography variant={'title'}>Czy nie dasz się złapać dezinformacji?</Typography>
+            <Typography variant={'title'}>Czy dasz się złapać dezinformacji?</Typography>
             <Typography variant={'body1'}>
               “Wydaje się, że najskuteczniejszym sposobem zwalczania dezinformacji są świadomi, krytyczni i
               wyedukowani internauci. Wiedza i edukacja to obecnie najlepsza odpowiedź na to negatywne
@@ -30,9 +30,7 @@ export const WelcomePage = () => {
           </ImageWrapper>
         </ContentWrapper>
         <ButtonSection>
-          <Typography variant={'subtitle1'}>
-            Sprawdź się ze znajomymi. Naucz ich, jak działać w sieci!
-          </Typography>
+          <Typography variant={'subtitle1'}>Rozwiąż quiz i porównaj wynik ze znajomymi</Typography>
           <StyledLink to="start-quiz">Zaczynamy!</StyledLink>
         </ButtonSection>
       </Wrapper>
