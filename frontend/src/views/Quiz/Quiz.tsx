@@ -3,10 +3,10 @@ import { usePageTitle } from 'providers/PageTitleProvider';
 import { Typography, QuestionWithAnswers, Button } from '../../components';
 import { ButtonWrapper } from './Quiz.styled';
 
-type quizStates = 'start' | 'play' | 'end';
+type quizStates = 'play' | 'end';
 
 export const Quiz = () => {
-  const [quizState, setQuizState] = useState<quizStates>('start');
+  const [quizState, setQuizState] = useState<quizStates>('play');
   const [questionIndex, setQuestionIndex] = useState<number>(0);
   const [correctAnswerClicked, setCorrectAnswerClicked] = useState<boolean>(false);
 
@@ -31,12 +31,6 @@ export const Quiz = () => {
 
   return (
     <section>
-      {quizState === 'start' && (
-        <>
-          <Typography variant="title">Title</Typography>
-          <button onClick={() => setQuizState('play')}>start pany</button>
-        </>
-      )}
       {quizState === 'play' && (
         <>
           <QuestionWithAnswers

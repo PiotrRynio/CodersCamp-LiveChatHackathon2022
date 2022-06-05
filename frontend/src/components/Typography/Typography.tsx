@@ -1,21 +1,33 @@
-import { Body1, Heading3, Heading4, Button, Answer, AnswerDescription, Question } from './Typography.styled';
+import {
+  Body1,
+  Body2,
+  Title,
+  Subtitle,
+  Button,
+  Answer,
+  AnswerDescription,
+  Question,
+} from './Typography.styled';
 
 export interface TypographyProps {
   children: React.ReactNode;
-  variant: 'title' | 'subtitle' | 'body' | 'button' | 'answer' | 'answerDescription' | 'question';
+  variant: 'title' | 'subtitle' | 'body1' | 'body2' | 'button' | 'answer' | 'answerDescription' | 'question';
 }
 
-export const Typography = ({ children, variant = 'body' }: TypographyProps) => {
+export const Typography = ({ children, variant = 'body1' }: TypographyProps) => {
   if (variant === 'title') {
-    return <Heading3>{children}</Heading3>;
+    return <Title>{children}</Title>;
   }
   if (variant === 'subtitle') {
-    return <Heading4>{children}</Heading4>;
+    return <Subtitle>{children}</Subtitle>;
   }
   if (variant === 'button') {
     return <Button>{children}</Button>;
   }
-  if (variant === 'body') {
+  if (variant === 'body1') {
+    return <Body1>{children}</Body1>;
+  }
+  if (variant === 'body2') {
     return <Body1>{children}</Body1>;
   }
   if (variant === 'answer') {

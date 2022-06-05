@@ -1,7 +1,6 @@
 import { Typography } from '../Typography';
 import { useState } from 'react';
-import { MdCheck, MdClose } from 'react-icons/md';
-import { AnswerText, Wrapper } from './Answer.styled';
+import { AnswerText, Wrapper, CorrectIcon, WrongIcon, IconWrapper } from './TextAnswer.styled';
 
 export type TextAnswerProps = {
   id: string;
@@ -23,7 +22,8 @@ export const TextAnswer = ({ answerText, explanation, isCorrect, onAnswerClick }
     <Wrapper onClick={() => clickHandler()}>
       <AnswerText>
         <Typography variant={'answer'}>{answerText}</Typography>
-        {clicked && (isCorrect ? <MdCheck /> : <MdClose />)}
+
+        {clicked && <IconWrapper>{isCorrect ? <CorrectIcon /> : <WrongIcon />}</IconWrapper>}
       </AnswerText>
       {clicked && <Typography variant={'answerDescription'}>{explanation}</Typography>}
     </Wrapper>
