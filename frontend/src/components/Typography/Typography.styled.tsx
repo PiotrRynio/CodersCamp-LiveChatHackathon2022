@@ -13,7 +13,21 @@ export const Subtitle = styled.h4`
   line-height: 50px;
   margin: 0;
 `;
-
+export const Subtitle1 = styled.h4`
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 900;
+  line-height: 50px;
+  margin: 0;
+`;
+export const Subtitle2 = styled.h4`
+  font-size: 18px;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 900;
+  line-height: 50px;
+  margin: 0;
+`;
 export const Body1 = styled.p`
   font-size: 23px;
   font-weight: 400;

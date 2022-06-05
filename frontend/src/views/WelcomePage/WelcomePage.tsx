@@ -30,7 +30,9 @@ export const WelcomePage = () => {
           </ImageWrapper>
         </ContentWrapper>
         <ButtonSection>
-          <Typography variant={'body1'}>Sprawdź się ze znajomymi. Naucz ich, jak działać w sieci!</Typography>
+          <Typography variant={'subtitle1'}>
+            Sprawdź się ze znajomymi. Naucz ich, jak działać w sieci!
+          </Typography>
           <StyledLink to="start-quiz">Zaczynamy!</StyledLink>
         </ButtonSection>
       </Wrapper>

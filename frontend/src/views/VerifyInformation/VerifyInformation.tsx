@@ -33,6 +33,9 @@ export const VerifyInformation = () => {
         ))}
       </ListWrapper>
       <FakeRiskInformation listLength={listLength} answers={answers} />
+      <Typography variant="subtitle2">
+        Wykonano na podstawie: https://panoptykon.org/stop-dezinformacji-przewodnik
+      </Typography>
     </Wrapper>
   );
 };
