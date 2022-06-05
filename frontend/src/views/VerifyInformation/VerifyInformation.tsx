@@ -7,10 +7,13 @@ import {
   VerifyInformationQuestionId,
 } from '../../components/VerifyInformationIOuestion';
 import { verifyInformationQuestionsListMock } from '../../mocks/verifyInformationQuestionsListMock';
+import { FakeRiskInformation } from '../../components/FakeRiskInformation';
+
+export type Answers = Record<VerifyInformationQuestionId, ClickedButton>;
 
 export const VerifyInformation = () => {
   const listLength = verifyInformationQuestionsListMock.length;
-  const [answers, setAnswers] = useState<Record<VerifyInformationQuestionId, ClickedButton>>({});
+  const [answers, setAnswers] = useState<Answers>({});
 
   const onAnswerButtonClick = ({ id, clickedButton }: { id: string; clickedButton: ClickedButton }) => {
     const newAnswer = { ...answers };
@@ -29,6 +32,7 @@ export const VerifyInformation = () => {
           <VerifyInformationQuestion key={id} text={question} id={id} onButtonClick={onAnswerButtonClick} />
         ))}
       </ListWrapper>
+      <FakeRiskInformation listLength={listLength} answers={answers} />
     </Wrapper>
   );
 };
