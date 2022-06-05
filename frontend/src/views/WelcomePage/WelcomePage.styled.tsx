@@ -14,11 +14,14 @@ export const ContentWrapper = styled.div`
   display: flex;
 `;
 export const TextWrapper = styled.div`
+  background-color: rgb(246, 246, 247);
   display: flex;
   flex-direction: column;
   gap: 36px;
-  padding: 10px;
-  width: 50%;
+  padding: 15px;
+  border-radius: 15px;
+  width: 45%;
+  height: 55%;
 `;
 export const ImageWrapper = styled.div`
   width: 50%;

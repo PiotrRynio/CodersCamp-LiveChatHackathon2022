@@ -6,7 +6,8 @@ import { TopBar } from 'components';
 import { StartQuizPage } from '../StartQuizPage';
 import { Footer } from 'components';
 import { WelcomePage } from '../WelcomePage/WelcomePage';
-import { VerifyInformation } from '../VerifyInformation';
+import { VerifyNews } from '../VerifyNews';
+import { VerifyTwitt } from '../VerifyTwitt';
 import { MoreKnowledge } from '../MoreKnowledge';
 
 export const App = () => {
@@ -18,8 +19,9 @@ export const App = () => {
           <Route path="/" element={<WelcomePage />} />
           <Route path="start-quiz" element={<StartQuizPage />} />
           <Route path="quiz" element={<Quiz />} />
-          <Route path="verify-information" element={<VerifyInformation />} />
           <Route path="more-knowledge" element={<MoreKnowledge />} />
+          <Route path="verify-news" element={<VerifyNews />} />
+          <Route path="verify-twitt" element={<VerifyTwitt />} />
         </Routes>
       </MainContent>
       <Footer />

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -38,4 +39,12 @@ export const PageTitle = styled.div`
   padding-left: 8px;
   border-left: 1px solid #e6e6e6;
   margin-left: 8px;
+`;
+export const StyledLink = styled(Link)``;
+
+export const TextLink = styled.span`
+  margin: 10px;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
