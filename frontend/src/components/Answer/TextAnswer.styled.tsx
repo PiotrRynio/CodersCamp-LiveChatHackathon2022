@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { MdCheck, MdClose } from 'react-icons/md';
 
 export const Wrapper = styled.div`
   max-width: 800px;
@@ -39,4 +40,18 @@ export const AnswerText = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+`;
+
+export const CorrectIcon = styled(MdCheck)`
+  color: darkgreen;
+  font-size: 56px;
+`;
+
+export const WrongIcon = styled(MdClose)`
+  color: darkred;
+  font-size: 56px;
+`;
+
+export const IconWrapper = styled.div`
+  width: 50px;
 `;

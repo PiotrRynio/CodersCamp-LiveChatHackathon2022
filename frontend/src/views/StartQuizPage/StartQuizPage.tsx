@@ -13,7 +13,7 @@ import { useState } from 'react';
 
 export const StartQuizPage = () => {
   const { playerName, setPlayerName } = useAppContext();
-  const [name, setName] = useState('');
+  const [name] = useState('');
   const onClick = () => {
     if (playerName.length < 2) return;
     setPlayerName(name);

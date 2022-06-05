@@ -1,4 +1,4 @@
-import questionsListMock from 'mocks/questions.json';
+import { questionsListMock } from 'mocks/questions';
 import { QuizQuestion } from './QuizQuestion';
 
 export const useQuizQuestion = () => {

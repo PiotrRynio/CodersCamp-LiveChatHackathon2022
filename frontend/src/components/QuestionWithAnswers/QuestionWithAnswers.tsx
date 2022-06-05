@@ -2,6 +2,7 @@ import { TextAnswer } from '../Answer';
 import { Typography } from '../Typography';
 import { QuestionWrapper, Wrapper } from './QuestionWithAnswers.styled';
 import { useQuizQuestion } from '../../hooks/useQuizQuestion/useQuizQuestion';
+import { ImageAnswers } from '../ImageAnswers';
 
 type QuestionWithAnswersProps = {
   questionIndex: number;
@@ -20,6 +21,7 @@ export const QuestionWithAnswers = ({
   if (questionsNumber <= questionIndex) {
     onLastQuestionAnswered();
   }
+  console.log(questionData);
 
   if (!questionData) {
     return <></>;
@@ -38,6 +40,20 @@ export const QuestionWithAnswers = ({
               id={answer.id}
               key={answer.id}
               answerText={answer.answerText}
+              explanation={answer.explanation}
+              isCorrect={answer.isCorrect}
+              onAnswerClick={onAnswerClick}
+            />
+          ))}
+        </div>
+      )}
+      {type === 'image' && (
+        <div>
+          {answersOptions.map((answer) => (
+            <ImageAnswers
+              id={answer.id}
+              key={answer.id}
+              answerSource={answer.answerImage}
               explanation={answer.explanation}
               isCorrect={answer.isCorrect}
               onAnswerClick={onAnswerClick}

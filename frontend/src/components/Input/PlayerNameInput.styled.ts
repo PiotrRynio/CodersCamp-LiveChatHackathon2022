@@ -10,10 +10,6 @@ export const StyledInput = styled.input`
   outline: none;
 `;
 
-export const StyledLabel = styled.label`
-  margin-right: 10px;
-`;
-
 export const StyledWrapper = styled.div`
   position: relative;
 `;

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 export const StyledStartQuizPage = styled.section`
   flex-grow: 1;
+<<<<<<< HEAD
   align-items: center;
   margin: 0 auto;
 `;

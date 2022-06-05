@@ -1,4 +1,4 @@
-import { StyledInput, StyledLabel, StyledWrapper } from './PlayerNameInput.styled';
+import { StyledInput, StyledWrapper } from './PlayerNameInput.styled';
 
 type PlayerNameInputProps = {
   onChange: (playerName: string) => void;

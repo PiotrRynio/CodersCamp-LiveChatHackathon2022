@@ -54,6 +54,7 @@ export const StyledLink = styled(Link)`
   border-radius: 4px;
   transition: all 0.3s;
   text-transform: capitalize;
+  font-size: 30px;
   text-transform: uppercase;
   text-decoration: none;
   align-self: center;
