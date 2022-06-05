@@ -11,7 +11,7 @@ export const ShareIcons = ({ result }: ShareIcons) => {
     <Wrapper>
       <IconContainer>
         <FacebookShareButton
-          url="https://testPage.pl"
+          url="https://fakemeter.netlify.app/"
           hashtag="#dezinformacja"
           quote={`Mój wynik w teście wynosi ${result}! A Ty jaką masz świadomość dezinformacji w sieci?`}
         >
@@ -20,7 +20,7 @@ export const ShareIcons = ({ result }: ShareIcons) => {
       </IconContainer>
       <IconContainer>
         <LinkedinShareButton
-          url="https://testPage.pl"
+          url="https://fakemeter.netlify.app/"
           title="The web developer expert in Auvergne"
           summary="The web developer expert in Auvergne"
         >
@@ -29,7 +29,7 @@ export const ShareIcons = ({ result }: ShareIcons) => {
       </IconContainer>
       <IconContainer>
         <TwitterShareButton
-          url="https://testPage.pl"
+          url="https://fakemeter.netlify.app/"
           title={`Mój wynik w teście wynosi ${result}! A Ty jaką masz świadomość dezinformacji w sieci?`}
         >
           <SocialIcon network="twitter" bgColor="white" style={{ height: 80, width: 80 }} />
