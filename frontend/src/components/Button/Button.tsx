@@ -4,11 +4,11 @@ import { PrimaryButton, SecondaryButton } from './Button.styled';
 
 type ButtonProps = {
   text: string;
-  variant?: 'primary' | 'secondary';
+  variant: 'primary' | 'secondary';
   onClick(): void;
 };
 
-export const Button = ({ text, variant = 'primary', onClick }: ButtonProps) => {
+export const Button = ({ text, variant, onClick }: ButtonProps) => {
   if (variant === 'primary') {
     return (
       <PrimaryButton onClick={onClick}>

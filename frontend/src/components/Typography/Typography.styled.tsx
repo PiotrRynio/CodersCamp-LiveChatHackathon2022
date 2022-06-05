@@ -65,3 +65,11 @@ export const Question = styled.p`
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 `;
+
+export const StartQuizDescription = styled.h6`
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 35px;
+  margin: 0;
+`;

@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { StyledInput, StyledLabel, StyleWrapper } from './PlayerNameInput.styled';
+import { StyledInput, StyledLabel, StyledWrapper } from './PlayerNameInput.styled';
 
 type PlayerNameInputProps = {
   onChange: (playerName: string) => void;
@@ -8,9 +7,9 @@ type PlayerNameInputProps = {
 
 export const PlayerNameInput = ({ onChange, value }: PlayerNameInputProps) => {
   return (
-    <StyleWrapper>
-      <StyledLabel htmlFor="player-name">Wpisz swoje imię</StyledLabel>
+    <StyledWrapper>
       <StyledInput
+        placeholder="Podaj swoje imię"
         name="player-name"
         id="player-name"
         value={value}
@@ -20,6 +19,6 @@ export const PlayerNameInput = ({ onChange, value }: PlayerNameInputProps) => {
         min="2"
         max="20"
       />
-    </StyleWrapper>
+    </StyledWrapper>
   );
 };
