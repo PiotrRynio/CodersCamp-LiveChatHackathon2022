@@ -9,8 +9,12 @@ import {
 } from './WelcomePage.styled';
 import { Typography } from '../../components';
 import trolImage from 'assets/images/trolImage.png';
+import { usePageTitle } from '../../providers/PageTitleProvider';
 
 export const WelcomePage = () => {
+  const { setPageTitle } = usePageTitle();
+  setPageTitle('Witaj!');
+
   return (
     <>
       <Wrapper>

@@ -10,8 +10,12 @@ import {
   StyledForm,
   StyledSubtitleTypographyWrapper,
 } from './StartQuizPage.styles';
+import { usePageTitle } from '../../providers/PageTitleProvider';
 
 export const StartQuizPage = () => {
+  const { setPageTitle } = usePageTitle();
+  setPageTitle('Rozpocznij test');
+
   const { playerName, setPlayerName, showWarning, handleWarning, handleStartGame } = useStartQuizPage();
 
   return (

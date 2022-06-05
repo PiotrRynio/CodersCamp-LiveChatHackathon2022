@@ -6,7 +6,7 @@ import { moreKnowledgeMock } from 'mocks/moreKnowledgeMock';
 
 export const MoreKnowledge = () => {
   const { setPageTitle } = usePageTitle();
-  setPageTitle('More Knowledge');
+  setPageTitle('Źródła wiedzy');
 
   return (
     <Wrapper>

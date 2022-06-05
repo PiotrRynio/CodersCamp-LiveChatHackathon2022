@@ -24,13 +24,13 @@ export const TopBar = () => {
           <StyledLink to="start-quiz">
             <TextLink>Quiz</TextLink>
           </StyledLink>
-          <StyledLink to="more-knowledge">
+          <StyledLink to="verify-news">
             <TextLink>NewsFakemeter</TextLink>
           </StyledLink>
           <StyledLink to="verify-twitt">
             <TextLink>TweetFakemeter</TextLink>
           </StyledLink>
-          <StyledLink to="start-quiz">
+          <StyledLink to="more-knowledge">
             <TextLink>Dobre źródła</TextLink>
           </StyledLink>
         </RightSection>
