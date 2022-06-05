@@ -1,12 +1,7 @@
-import {
-  MessageWrapper,
-  ResultValue,
-  TestSummaryContainer,
-  Title,
-  ButtonWrapper,
-} from './TestSummary.styled';
+import { ResultValue, TestSummaryContainer, ButtonWrapper, ShareWrapper } from './TestSummary.styled';
 import { ShareIcons } from 'components/ShareIcons/ShareIcons';
 import { Button } from '../Button';
+import { Typography } from '../Typography';
 
 export interface TestSummaryProps {
   result: string;
@@ -16,12 +11,15 @@ export interface TestSummaryProps {
 export const TestSummary = ({ result, onRestartGameButtonClick }: TestSummaryProps) => {
   return (
     <TestSummaryContainer>
-      <Title>Gratulacje!</Title>
-      <MessageWrapper>
+      <Typography variant="title">Gratulacje!</Typography>
+      <Typography variant="body1">
         Udało Ci się zdobyć <ResultValue>{result}</ResultValue> procent punktów. Podziel się wynikiem ze
         znajomymi i pomóż razem z nami zwiększać świadomość użytkowników internetu!
-      </MessageWrapper>
-      <ShareIcons result={result} />
+      </Typography>
+      <ShareWrapper>
+        <Typography variant="subtitle">Share it! </Typography>
+        <ShareIcons result={result} />
+      </ShareWrapper>
       <ButtonWrapper>
         <Button text={'Poproszę jeszcze raz'} onClick={onRestartGameButtonClick} variant={'secondary'} />
       </ButtonWrapper>
