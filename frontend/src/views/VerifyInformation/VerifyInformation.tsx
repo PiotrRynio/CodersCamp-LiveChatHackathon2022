@@ -8,10 +8,14 @@ import {
 } from '../../components/VerifyInformationIOuestion';
 import { verifyInformationQuestionsListMock } from '../../mocks/verifyInformationQuestionsListMock';
 import { FakeRiskInformation } from '../../components/FakeRiskInformation';
+import { usePageTitle } from '../../providers/PageTitleProvider';
 
 export type Answers = Record<VerifyInformationQuestionId, ClickedButton>;
 
 export const VerifyInformation = () => {
+  const { setPageTitle } = usePageTitle();
+  setPageTitle('Verify Information');
+
   const listLength = verifyInformationQuestionsListMock.length;
   const [answers, setAnswers] = useState<Answers>({});
 
