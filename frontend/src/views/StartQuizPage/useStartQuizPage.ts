@@ -12,7 +12,7 @@ export const useStartQuizPage = () => {
 
   const handleStartGame = () => {
     if (playerName.length < 3) {
-      return handleWarning(!showWarning);
+      return handleWarning(true);
     }
     setPlayerName(name);
   };

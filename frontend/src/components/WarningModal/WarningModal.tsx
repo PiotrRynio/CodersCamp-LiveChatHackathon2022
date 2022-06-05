@@ -13,7 +13,7 @@ export const WarningModal = ({ children, showWarning, handleWarning }: WarningMo
   return (
     <StyledInnerWrapper showWarning={showWarning}>
       <Typography variant="body1">{children}</Typography>
-      <Button text="Rozumiem" onClick={() => handleWarning(!showWarning)} />
+      <Button text="Rozumiem" onClick={() => handleWarning(false)} />
     </StyledInnerWrapper>
   );
 };
