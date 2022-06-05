@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ListWrapper, Wrapper } from './VerifyInformation.styled';
+import { ListWrapper, Wrapper, SourceWrapper } from './VerifyInformation.styled';
 import { Typography } from '../../components';
 import {
   ClickedButton,
@@ -37,9 +37,11 @@ export const VerifyInformation = () => {
         ))}
       </ListWrapper>
       <FakeRiskInformation listLength={listLength} answers={answers} />
-      <Typography variant="subtitle2">
-        Wykonano na podstawie: https://panoptykon.org/stop-dezinformacji-przewodnik
-      </Typography>
+      <SourceWrapper>
+        <Typography variant="subtitle2">
+          Wykonano na podstawie: https://panoptykon.org/stop-dezinformacji-przewodnik
+        </Typography>
+      </SourceWrapper>
     </Wrapper>
   );
 };
