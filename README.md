@@ -13,3 +13,18 @@ Aplikacja stworzona na hackathon organizowany przez LiveChat
 1. Sklonuj repozytorium
 2. `npm install`
 3. `npm run start-fe`
+
+## Opis Aplikacji
+Aplikacja ma na celu poszerzanie świadomosci oraz edukowanie na temat dezinformacji. Przejdź test wiedzy o dezinformacji, trollingu oraz fake newsach. Sprawdź czy jesteś podatny na manipulację i rozwiń krytyczne myślenie odpowiadając na pytania. Podziel się otrzymanym wynikiem na social mediach.
+
+### Użyte technologie
+
+- React
+- React Hooks
+- React Router
+- React Query
+- Typescript
+- concurrently lib
+- axios lib
+- Styled Components
+- uuid
