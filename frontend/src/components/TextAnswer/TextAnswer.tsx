@@ -1,6 +1,6 @@
 import { Typography } from '../Typography';
 import { useState } from 'react';
-import { AnswerText, Wrapper, CorrectIcon, WrongIcon, IconWrapper } from './TextAnswer.styled';
+import { AnswerText, Wrapper, CorrectIcon, WrongIcon, IconWrapper, Link } from './TextAnswer.styled';
 
 export type TextAnswerProps = {
   id: string;
@@ -8,9 +8,16 @@ export type TextAnswerProps = {
   explanation: string;
   isCorrect: boolean;
   onAnswerClick(isCorrect: boolean): void;
+  source?: [string, string];
 };
 
-export const TextAnswer = ({ answerText, explanation, isCorrect, onAnswerClick }: TextAnswerProps) => {
+export const TextAnswer = ({
+  answerText,
+  explanation,
+  isCorrect,
+  onAnswerClick,
+  source,
+}: TextAnswerProps) => {
   const [clicked, setClicked] = useState<boolean>(false);
 
   const clickHandler = () => {
@@ -25,7 +32,12 @@ export const TextAnswer = ({ answerText, explanation, isCorrect, onAnswerClick }
 
         {clicked && <IconWrapper>{isCorrect ? <CorrectIcon /> : <WrongIcon />}</IconWrapper>}
       </AnswerText>
-      {clicked && <Typography variant={'answerDescription'}>{explanation}</Typography>}
+      {clicked && (
+        <Typography variant={'answerDescription'}>
+          {explanation}
+          {source && <Link href={source[1]}>{source[0]}</Link>}
+        </Typography>
+      )}
     </Wrapper>
   );
 };

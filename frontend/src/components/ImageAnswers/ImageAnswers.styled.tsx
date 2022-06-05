@@ -60,3 +60,5 @@ export const WrongIcon = styled(MdClose)`
   color: darkred;
   font-size: 75px;
 `;
+
+export const Link = styled.a``;

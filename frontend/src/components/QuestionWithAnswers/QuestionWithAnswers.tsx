@@ -1,4 +1,4 @@
-import { TextAnswer } from '../Answer';
+import { TextAnswer } from '../TextAnswer';
 import { Typography } from '../Typography';
 import { QuestionWrapper, Wrapper } from './QuestionWithAnswers.styled';
 import { useQuizQuestion } from '../../hooks/useQuizQuestion/useQuizQuestion';
@@ -21,7 +21,6 @@ export const QuestionWithAnswers = ({
   if (questionsNumber <= questionIndex) {
     onLastQuestionAnswered();
   }
-  console.log(questionData);
 
   if (!questionData) {
     return <></>;
@@ -43,6 +42,7 @@ export const QuestionWithAnswers = ({
               explanation={answer.explanation}
               isCorrect={answer.isCorrect}
               onAnswerClick={onAnswerClick}
+              source={answer.source}
             />
           ))}
         </div>
@@ -57,6 +57,7 @@ export const QuestionWithAnswers = ({
               explanation={answer.explanation}
               isCorrect={answer.isCorrect}
               onAnswerClick={onAnswerClick}
+              source={answer.source}
             />
           ))}
         </div>

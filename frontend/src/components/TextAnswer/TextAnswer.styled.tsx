@@ -12,6 +12,10 @@ export const Wrapper = styled.div`
     background-color: #ffd000;
     animation: shake 0.2s;
     animation-iteration-count: 1;
+
+    a {
+      background-color: #ffffff;
+    }
   }
 
   @keyframes shake {
@@ -54,4 +58,13 @@ export const WrongIcon = styled(MdClose)`
 
 export const IconWrapper = styled.div`
   width: 50px;
+`;
+
+export const Link = styled.a`
+  display: inline-block;
+  transform: skewX(-10deg);
+  padding: 0 2px;
+  color: #000000;
+  text-decoration: none;
+  background-color: #ffd000;
 `;
