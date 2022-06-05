@@ -1,6 +1,7 @@
+import { useStartQuizPage } from './useStartQuizPage';
 import { Typography } from '../../components/Typography';
-import { useAppContext } from 'providers/AppContextProvider';
 import { PlayerNameInput } from '../../components/Input';
+import { WarningModal } from '../../components/WarningModal';
 import {
   StyledStartQuizPage,
   StyledTypographyWrapper,
@@ -9,15 +10,13 @@ import {
   StyledForm,
   StyledSubtitleTypographyWrapper,
 } from './StartQuizPage.styles';
-import { useState } from 'react';
+import { usePageTitle } from '../../providers/PageTitleProvider';
 
 export const StartQuizPage = () => {
-  const { playerName, setPlayerName } = useAppContext();
-  const [name] = useState('');
-  const onClick = () => {
-    if (playerName.length < 2) return;
-    setPlayerName(name);
-  };
+  const { setPageTitle } = usePageTitle();
+  setPageTitle('Rozpocznij test');
+
+  const { playerName, setPlayerName, showWarning, handleWarning, handleStartGame } = useStartQuizPage();
 
   return (
     <StyledStartQuizPage>
@@ -35,10 +34,13 @@ export const StartQuizPage = () => {
         <StyledInputWrapper>
           <PlayerNameInput onChange={setPlayerName} value={playerName} />
         </StyledInputWrapper>
-        <StyledLink onClick={onClick} to="/quiz">
+        <StyledLink onClick={handleStartGame} to={`/${playerName.length >= 3 ? 'quiz' : 'start-quiz'}`}>
           <Typography variant="button">Zacznij Quiz</Typography>
         </StyledLink>
       </StyledForm>
+      <WarningModal showWarning={showWarning} handleWarning={handleWarning}>
+        Musisz wpisać co najmniej 3 znaki
+      </WarningModal>
     </StyledStartQuizPage>
   );
 };

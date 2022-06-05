@@ -9,7 +9,7 @@
     "test-fe": "cd frontend && npm run test"
   },
   "devDependencies": {
+    "@types/styled-components": "^5.1.25",
     "husky": "^7.0.4"
-  },
-  "dependencies": {}
+  }
 }
