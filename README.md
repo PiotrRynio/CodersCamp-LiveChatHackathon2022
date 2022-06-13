@@ -1,6 +1,7 @@
 # CodersCamp2021.Project-Hackathon
 
 Aplikacja stworzona na hackathon organizowany przez LiveChat
+DEMO: https://fakemeter.netlify.app
 
 ## Autorzy
 
